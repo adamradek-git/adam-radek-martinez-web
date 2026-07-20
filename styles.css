@@ -1,0 +1,160 @@
+:root {
+  --paper: #fbfaf7;
+  --ink: #24211d;
+  --muted: #6d665c;
+  --rule: #d8d1c4;
+  --link: #075f8f;
+  --link-hover: #8a2b23;
+  --accent: #f0ebe1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(36, 33, 29, 0.035) 1px, transparent 1px),
+    var(--paper);
+  background-size: 48px 48px;
+  color: var(--ink);
+  font-family: "Work Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.page-shell {
+  width: min(760px, calc(100% - 36px));
+  margin: 36px auto 56px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 16px;
+}
+
+h1,
+h2 {
+  font-family: "Crimson Pro", Georgia, serif;
+  line-height: 1.08;
+  margin: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 3rem, 3rem);
+  letter-spacing: 0;
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 10px;
+  font-size: 0.94rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--link-hover);
+}
+
+.section {
+  border-bottom: 1px solid var(--rule);
+  padding: 22px 0 24px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.portrait {
+  display: block;
+  width: 190px;
+  height: auto;
+  border: 1px solid var(--rule);
+  background: var(--accent);
+}
+
+p {
+  margin: 0 0 13px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.section-intro {
+  margin-bottom: 12px;
+}
+
+.contact-line {
+  color: var(--muted);
+}
+
+ul {
+  margin: 0;
+  padding-left: 21px;
+}
+
+li + li {
+  margin-top: 8px;
+}
+
+.post-list-note {
+  margin-top: 16px;
+}
+
+.item-title {
+  color: var(--ink);
+}
+
+.item-meta {
+  color: var(--muted);
+  font-size: 0.93rem;
+  margin-left: 4px;
+}
+
+footer {
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding-top: 18px;
+}
+
+@media (max-width: 620px) {
+  .page-shell {
+    width: min(100% - 28px, 760px);
+    margin-top: 24px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: 156px;
+  }
+}

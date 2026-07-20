@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 376" role="img" aria-labelledby="title desc">
+  <title id="title">Adam Radek Martinez monogram</title>
+  <desc id="desc">A simple academic monogram image with the initials ARM.</desc>
+  <rect width="312" height="376" fill="#f0ebe1"/>
+  <rect x="18" y="18" width="276" height="340" fill="#fbfaf7" stroke="#2c2924" stroke-width="2"/>
+  <path d="M54 86h204M54 292h204" stroke="#c7bda9" stroke-width="2"/>
+  <text x="156" y="191" text-anchor="middle" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#24211d">ARM</text>
+  <text x="156" y="233" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="4" fill="#6d665c">ADAM RADEK</text>
+  <text x="156" y="257" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="4" fill="#6d665c">MARTINEZ</text>
+</svg>
